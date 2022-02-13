@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\HeroScript.cs" />
     <Compile Include="Assets\Scripts\MainMenuButtonScript.cs" />
   </ItemGroup>
   <ItemGroup>
