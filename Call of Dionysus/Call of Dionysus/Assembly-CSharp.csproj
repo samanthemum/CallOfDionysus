@@ -55,8 +55,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\HeroScript.cs" />
     <Compile Include="Assets\Scripts\MainMenuButtonScript.cs" />
-    <Compile Include="Assets\DisplayHeroHP.cs" />
-    <Compile Include="Assets\DisplayHeroSanity.cs" />
+    <Compile Include="Assets\Scripts\DisplayHeroHP.cs" />
+    <Compile Include="Assets\Scripts\ExitScript.cs" />
+    <Compile Include="Assets\Scripts\DisplayHeroSanity.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript.cs" />
+    <Compile Include="Assets\Scripts\DisplayEnemyHP.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
