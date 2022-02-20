@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     private GameManager gameManager;
+    private HeroScript hero;
     private int hp = 50;
     private int maxHP = 50;
     public float speed;
@@ -23,17 +24,36 @@ public class EnemyScript : MonoBehaviour
     {
         hp = newHp;
     }
+
+    // used for spawners
+    public void setGameManger(GameManager gameManager)
+    {
+        this.gameManager = gameManager;
+        if(this.gameManager != null)
+        {
+            hero = gameManager.getHero();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = GetComponentInParent<GameManager>();
-
+        try
+        {
+            gameManager = GetComponentInParent<GameManager>();
+            if (this.gameManager != null)
+            {
+                hero = gameManager.getHero();
+            }
+        }
+        catch(System.Exception e)
+        {
+            Debug.LogException(e);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        HeroScript hero = gameManager.getHero();
 
         if(hero != null)
         {
