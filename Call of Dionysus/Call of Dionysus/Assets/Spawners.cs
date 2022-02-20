@@ -28,19 +28,22 @@ public class Spawners : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spawnTimer -= Time.deltaTime;
-        if(spawnTimer <= 0)
+        if (!gameManager.isPaused())
         {
-            for(int i = 0; i < numberToSpawn; i++)
+            spawnTimer -= Time.deltaTime;
+            if (spawnTimer <= 0)
             {
-                Transform ts = GetComponent<Transform>();
-                GameObject enemy = Instantiate(enemyObject, ts.position, ts.rotation);
-                // TODO- wanna make edits to enemy states
-                // based on level
-                EnemyScript es = enemy.GetComponent<EnemyScript>();
-                es.setGameManger(gameManager);
+                GameObject enemy;
+                for (int i = 0; i < numberToSpawn; i++)
+                {
+                    Transform ts = GetComponent<Transform>();
+                    enemy = Instantiate(enemyObject, ts.position, ts.rotation) as GameObject;
+                    // TODO- wanna make edits to enemy states
+                    // based on level
+                    enemy.GetComponent<EnemyScript>().setGameManger(gameManager);
+                }
+                spawnTimer = rate;
             }
-            spawnTimer = rate;
         }
     }
 }

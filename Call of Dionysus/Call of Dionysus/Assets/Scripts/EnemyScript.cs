@@ -32,6 +32,7 @@ public class EnemyScript : MonoBehaviour
         if(this.gameManager != null)
         {
             hero = gameManager.getHero();
+            Debug.Log("Game manager has been set");
         }
     }
     // Start is called before the first frame update
@@ -39,7 +40,11 @@ public class EnemyScript : MonoBehaviour
     {
         try
         {
-            gameManager = GetComponentInParent<GameManager>();
+            // DONT NOT OVERRIDE IF ALREADY SET OH MY LORD
+            if (gameManager == null)
+            {
+                gameManager = GetComponentInParent<GameManager>();
+            }
             if (this.gameManager != null)
             {
                 hero = gameManager.getHero();
@@ -54,8 +59,11 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool isPaused = false;
+        isPaused = gameManager.isPaused();
+ 
 
-        if(hero != null)
+        if(hero != null && !isPaused)
         {
             Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
             float hero_x = heroRB.transform.position.x;
