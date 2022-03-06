@@ -9,6 +9,7 @@ public class EnemyScript : MonoBehaviour
     private int hp = 50;
     private int maxHP = 50;
     public float speed;
+    public float damage = 10;
 
     public int getHP()
     {
@@ -83,6 +84,15 @@ public class EnemyScript : MonoBehaviour
             Vector2 directionOfHero = (heroRB.transform.position - enemyRB.transform.position).normalized;
             Vector2 newPosition = new Vector2(enemy_x + (speed * directionOfHero.x), enemy_y + (speed * directionOfHero.y));
             enemyRB.MovePosition(newPosition);
+        }
+    }
+
+    // Do damage to the player if we hit them
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "hero")
+        {
+            gameManager.takeDamage(damage);
         }
     }
 }

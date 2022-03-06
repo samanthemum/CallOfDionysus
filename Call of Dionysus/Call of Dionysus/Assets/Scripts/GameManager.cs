@@ -20,6 +20,17 @@ public class GameManager : MonoBehaviour
         hero = GetComponentInChildren<HeroScript>();
     }
 
+    public void takeDamage(float damage)
+    {
+        this.hero.takeDamage(damage);
+
+        // we've lost
+        if(this.hero.getHP() < 0)
+        {
+            loseLevel();
+        }
+    }
+
     public void pause()
     {
         paused = true;
@@ -38,11 +49,13 @@ public class GameManager : MonoBehaviour
     public void winLevel()
     {
         level++;
+        hero.resetHP();
         SceneManager.LoadScene("WinLevel");
     }
 
     public void loseLevel()
     {
+        hero.resetHP();
         SceneManager.LoadScene("LossLevel");
     }
 

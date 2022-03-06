@@ -11,6 +11,7 @@ public class Spawners : MonoBehaviour
     // might want to add a limit later
     public float rate;
     float spawnTimer;
+    public float minDamage = 10;
     void Start()
     {
         gameManager = GetComponentInParent<GameManager>();
@@ -41,6 +42,7 @@ public class Spawners : MonoBehaviour
                     // TODO- wanna make edits to enemy states
                     // based on level
                     enemy.GetComponent<EnemyScript>().setGameManger(gameManager);
+                    enemy.GetComponent<EnemyScript>().damage = (Random.value * 10) + minDamage;
                 }
                 spawnTimer = rate;
             }

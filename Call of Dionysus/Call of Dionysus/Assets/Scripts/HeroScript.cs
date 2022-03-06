@@ -54,6 +54,16 @@ public class HeroScript : MonoBehaviour
         return maxSanity;
     }
 
+    public void takeDamage(float damage)
+    {
+        hp = hp - (int)damage;
+    }
+
+    public void resetHP()
+    {
+        hp = maxHP;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
