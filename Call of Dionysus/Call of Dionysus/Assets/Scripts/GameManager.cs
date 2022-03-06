@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         this.hero.takeDamage(damage);
 
         // we've lost
-        if(this.hero.getHP() < 0)
+        if(this.hero.getHP() <= 0)
         {
             loseLevel();
         }

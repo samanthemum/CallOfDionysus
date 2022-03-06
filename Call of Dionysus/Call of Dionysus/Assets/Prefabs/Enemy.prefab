@@ -339,3 +339,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  damage: 10
+  gameObject: {fileID: 5328477690310578893}

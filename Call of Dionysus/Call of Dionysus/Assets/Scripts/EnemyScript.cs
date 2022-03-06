@@ -10,6 +10,8 @@ public class EnemyScript : MonoBehaviour
     private int maxHP = 50;
     public float speed;
     public float damage = 10;
+    public GameObject gameObject;
+    private bool fight = false;
 
     public int getHP()
     {
@@ -64,7 +66,7 @@ public class EnemyScript : MonoBehaviour
         isPaused = gameManager.isPaused();
  
 
-        if(hero != null && !isPaused)
+        if(hero != null && !isPaused && !fight)
         {
             Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
             float hero_x = heroRB.transform.position.x;
@@ -92,7 +94,50 @@ public class EnemyScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "hero")
         {
-            gameManager.takeDamage(damage);
+            fight = true;
+            if (gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation")) 
+            {
+                int attack = gameManager.getHero().getAttack();
+
+                Rigidbody2D enemyRB = GetComponent<Rigidbody2D>();
+                Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
+                float enemy_x = enemyRB.transform.position.x;
+                float enemy_y = enemyRB.transform.position.y;
+
+                // apply knockback
+                Vector2 heroToEnemy = (enemyRB.transform.position - heroRB.transform.position).normalized * (attack);
+
+                float x_attack = heroToEnemy.x < 0.0f ?  -1.5f : 1.5f;
+                float y_attack = heroToEnemy.y < 0.0f ? -1.5f : 1.5f;
+
+                enemyRB.AddForce(new Vector2(x_attack, y_attack));
+
+                // do damage
+                hp -= attack;
+
+                if (hp <= 0)
+                {
+                    Destroy(gameObject);
+                }
+            }
+            else {
+                Rigidbody2D enemyRB = GetComponent<Rigidbody2D>();
+                Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
+                float enemy_x = enemyRB.transform.position.x;
+                float enemy_y = enemyRB.transform.position.y;
+
+                // apply knockback
+                Vector2 enemyToHero = (heroRB.transform.position - enemyRB.transform.position).normalized * (damage);
+                float x_attack = enemyToHero.x < 0 ? -1.5f : 1.5f;
+                float y_attack = enemyToHero.y < 0 ? -1.5f : 1.5f;
+                hero.GetComponent<Rigidbody2D>().MovePosition(new Vector2(heroRB.transform.position.x + x_attack, heroRB.transform.position.y + y_attack));
+                gameManager.takeDamage(damage);
+            }
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        fight = false;
     }
 }

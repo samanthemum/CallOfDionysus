@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36121185 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3413187408036512191, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+  m_PrefabInstance: {fileID: 3413187409621403088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &99872194
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +909,7 @@ GameObject:
   - component: {fileID: 1637038907}
   - component: {fileID: 1011146534}
   - component: {fileID: 1011146533}
+  - component: {fileID: 1011146538}
   m_Layer: 0
   m_Name: Hero
   m_TagString: hero
@@ -1003,8 +1009,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -682650115
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ca80d6f795eb55458f67470d72ae62e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1037,6 +1043,25 @@ RectTransform:
   m_AnchoredPosition: {x: -27.834185, y: -4.6762466}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1011146538
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011146532}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9f7deef25326aed49baf873e9c0a7afe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1163963088
 GameObject:
   m_ObjectHideFlags: 0
@@ -4833,6 +4858,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1186242466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3413187408269092989, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+  m_PrefabInstance: {fileID: 3413187409621403088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1374776724 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
@@ -9863,6 +9893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heroRB: {fileID: 0}
+  animator: {fileID: 1011146538}
 --- !u!1001 &3413187409621403088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9870,6 +9901,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 763563923}
     m_Modifications:
+    - target: {fileID: 3413187407737051489, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187407769200954, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187407966129965, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408036512191, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408036512191, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408129510079, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408269092989, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408269092989, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408382688517, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408392197734, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408448457835, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408703204667, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3413187409014651241, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_Name
       value: Altar
@@ -9917,6 +9996,22 @@ PrefabInstance:
     - target: {fileID: 3413187409014651242, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187409014651245, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: initialObj
+      value: 
+      objectReference: {fileID: 1186242466}
+    - target: {fileID: 3413187409014651245, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: makeTradeObj
+      value: 
+      objectReference: {fileID: 36121185}
+    - target: {fileID: 3413187409106213049, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187409167669848, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}

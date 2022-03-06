@@ -8,11 +8,15 @@ public class Altar : MonoBehaviour
     GameManager gameManager;
     public Canvas initialCanvas;
     public Canvas makeTrade;
+    public GameObject initialObj;
+    public GameObject makeTradeObj;
     void Start()
     {
         gameManager = GetComponentInParent<GameManager>();
         initialCanvas.enabled = false;
         makeTrade.enabled = false;
+        initialObj.SetActive(false);
+        makeTradeObj.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,13 +33,25 @@ public class Altar : MonoBehaviour
             gameManager.pause();
             // Create UI to make sanity decisions decisions
             initialCanvas.enabled = true;
+            initialObj.SetActive(true);
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        initialCanvas.enabled = false;
+        makeTrade.enabled = false;
+        initialObj.SetActive(false);
+        makeTradeObj.SetActive(false);
+
     }
 
     public void exitTrade()
     {
         initialCanvas.enabled = false;
         makeTrade.enabled = false;
+        initialObj.SetActive(false);
+        makeTradeObj.SetActive(false);
         gameManager.unpause();
     }
 
@@ -43,6 +59,7 @@ public class Altar : MonoBehaviour
     {
         initialCanvas.enabled = false;
         makeTrade.enabled = true;
+        makeTradeObj.SetActive(true);
     }
 
     public void hpBuff()

@@ -12,11 +12,18 @@ public class HeroScript : MonoBehaviour
     static int maxHP = 100;
     const int maxSanity = 100;
     static int attack = 20;
+    private bool fight = false;
+    public Animator animator;
 
     public void hpBuff(float buff)
     {
         hp = (int)(hp + buff);
         maxHP = (int)(maxHP + buff);
+    }
+
+    public int getAttack()
+    {
+        return attack;
     }
 
     public void attackBuff(float buff)
@@ -76,7 +83,7 @@ public class HeroScript : MonoBehaviour
     {
         bool isPaused = gameManager.isPaused();
 
-        if (!isPaused)
+        if (!isPaused && !fight);
         {
             float y_factor = (int)Input.GetAxis("Vertical");
             float x_factor = (int)Input.GetAxis("Horizontal");
@@ -85,6 +92,24 @@ public class HeroScript : MonoBehaviour
             float current_x = heroRB.position.x;
 
             heroRB.MovePosition(new Vector2(current_x + (x_factor * speed), current_y + (y_factor * speed)));
+
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                animator.SetTrigger("attack");
+            } 
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "enemy")
+        {
+            fight = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        fight = false;
     }
 }
