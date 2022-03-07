@@ -10,7 +10,6 @@ public class EnemyScript : MonoBehaviour
     private int maxHP = 50;
     public float speed;
     public float damage = 10;
-    public GameObject gameObject;
     private bool fight = false;
 
     public int getHP()
@@ -117,7 +116,7 @@ public class EnemyScript : MonoBehaviour
 
                 if (hp <= 0)
                 {
-                    Destroy(gameObject);
+                    Destroy(this.gameObject);
                 }
             }
             else {
