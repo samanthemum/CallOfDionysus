@@ -13,20 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2022-03-07T16:06:42.381-06:00
-  initializedAtString: 2022-03-07T16:01:41.387-06:00
+  lastUpdatedAtString: 2022-03-08T12:20:04.862-06:00
+  initializedAtString: 2022-03-08T12:08:44.631-06:00
   entries:
-  - path: Call of Dionysus\Call of Dionysus\Assets\Scripts\EnemyScript.cs
+  - path: ~$Sprint Plan.xlsx
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\~$Sprint Plan.xlsx
+    projectPath: ..\..\~$Sprint Plan.xlsx
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\.vs\Call of Dionysus\v17\.suo
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Assets\Scripts\EnemyScript.cs
-    projectPath: Assets\Scripts\EnemyScript.cs
+      of Dionysus\.vs\Call of Dionysus\v17\.suo
+    projectPath: .vs\Call of Dionysus\v17\.suo
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Assets\Sprites\Hero.controller
+  - path: Call of Dionysus\Call of Dionysus\Assets\MainCamera.cs
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Assets\Sprites\Hero.controller
-    projectPath: Assets\Sprites\Hero.controller
+      of Dionysus\Assets\MainCamera.cs
+    projectPath: Assets\MainCamera.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -37,24 +43,38 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\0d\0d66ca8592f26cad26987d807508073d
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\01\01c19b0a51b032c455fbfbf5faa2ae81
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\0d\0d66ca8592f26cad26987d807508073d
-    projectPath: Library\Artifacts\0d\0d66ca8592f26cad26987d807508073d
+      of Dionysus\Library\Artifacts\01\01c19b0a51b032c455fbfbf5faa2ae81
+    projectPath: Library\Artifacts\01\01c19b0a51b032c455fbfbf5faa2ae81
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\0f\0f439d2f5dcc7f2a3cb3d2f8ec8c7c19
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\Artifacts\0f\0f439d2f5dcc7f2a3cb3d2f8ec8c7c19
+    projectPath: Library\Artifacts\0f\0f439d2f5dcc7f2a3cb3d2f8ec8c7c19
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\1a\1a9f2ac2e4256120b116830a49b97913
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\Artifacts\1a\1a9f2ac2e4256120b116830a49b97913
+    projectPath: Library\Artifacts\1a\1a9f2ac2e4256120b116830a49b97913
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\46\462f82881505060b6f7b12911382aa86
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Library\Artifacts\46\462f82881505060b6f7b12911382aa86
     projectPath: Library\Artifacts\46\462f82881505060b6f7b12911382aa86
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\49\49b45b7a8ebd349c46f9fca206514a52
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\61\61c2301435975c98a8bb5249254b051e
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\49\49b45b7a8ebd349c46f9fca206514a52
-    projectPath: Library\Artifacts\49\49b45b7a8ebd349c46f9fca206514a52
+      of Dionysus\Library\Artifacts\61\61c2301435975c98a8bb5249254b051e
+    projectPath: Library\Artifacts\61\61c2301435975c98a8bb5249254b051e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -63,43 +83,43 @@ MonoBehaviour:
       of Dionysus\Library\Artifacts\6d\6d332e85e8e703e071624ba9bb3043cf
     projectPath: Library\Artifacts\6d\6d332e85e8e703e071624ba9bb3043cf
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\82\82683b0e296f6059a48823ba90425ee8
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\Artifacts\82\82683b0e296f6059a48823ba90425ee8
+    projectPath: Library\Artifacts\82\82683b0e296f6059a48823ba90425ee8
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\a2\a270f4e5caecaa52349677abadd5d81d
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\95\95d4efd291b83330dce0fea9f141c77c
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\a2\a270f4e5caecaa52349677abadd5d81d
-    projectPath: Library\Artifacts\a2\a270f4e5caecaa52349677abadd5d81d
+      of Dionysus\Library\Artifacts\95\95d4efd291b83330dce0fea9f141c77c
+    projectPath: Library\Artifacts\95\95d4efd291b83330dce0fea9f141c77c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\ac\acdbd7f735cd03174b8afbd5816c8a1b
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\a1\a1b9c8f53d22f3ee9b4d497622130202
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\ac\acdbd7f735cd03174b8afbd5816c8a1b
-    projectPath: Library\Artifacts\ac\acdbd7f735cd03174b8afbd5816c8a1b
+      of Dionysus\Library\Artifacts\a1\a1b9c8f53d22f3ee9b4d497622130202
+    projectPath: Library\Artifacts\a1\a1b9c8f53d22f3ee9b4d497622130202
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\c2\c27f1678c6117d17a464b60140b0580f
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\Artifacts\c2\c27f1678c6117d17a464b60140b0580f
+    projectPath: Library\Artifacts\c2\c27f1678c6117d17a464b60140b0580f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\c9\c9a155e48b1ff3dffa46881e559893e7
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\Artifacts\c9\c9a155e48b1ff3dffa46881e559893e7
+    projectPath: Library\Artifacts\c9\c9a155e48b1ff3dffa46881e559893e7
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\e7\e7bf5255673f3d0f116e8db6fbf5413a
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\e7\e7bf5255673f3d0f116e8db6fbf5413a
-    projectPath: Library\Artifacts\e7\e7bf5255673f3d0f116e8db6fbf5413a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\ed\ed544275406d4f3608958e5a4d0238e3
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\ed\ed544275406d4f3608958e5a4d0238e3
-    projectPath: Library\Artifacts\ed\ed544275406d4f3608958e5a4d0238e3
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Call of Dionysus\Call of Dionysus\Library\EditorInstance.json
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Library\EditorInstance.json
@@ -107,10 +127,24 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Call of Dionysus\Call of Dionysus\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Call of Dionysus\Call of Dionysus\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -132,6 +166,13 @@ MonoBehaviour:
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Call of Dionysus\Call of Dionysus\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -175,6 +216,13 @@ MonoBehaviour:
       of Dionysus\Logs\AssetImportWorker0.log
     projectPath: Logs\AssetImportWorker0.log
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Call of Dionysus\Call of Dionysus\Logs\AssetImportWorker0-prev.log
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Logs\AssetImportWorker0-prev.log
+    projectPath: Logs\AssetImportWorker0-prev.log
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Call of Dionysus\Call of Dionysus\Logs\shadercompiler-AssetImportWorker0.log
@@ -182,8 +230,8 @@ MonoBehaviour:
       of Dionysus\Logs\shadercompiler-AssetImportWorker0.log
     projectPath: Logs\shadercompiler-AssetImportWorker0.log
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Call of Dionysus\Call of Dionysus\Logs\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Logs\shadercompiler-UnityShaderCompiler.exe0.log
@@ -191,13 +239,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Temp\__Backupscenes\0.backup
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Temp\__Backupscenes\0.backup
-    projectPath: Temp\__Backupscenes\0.backup
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Call of Dionysus\Call of Dionysus\Temp\Assembly-CSharp.dll.hash
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Temp\Assembly-CSharp.dll.hash
@@ -219,17 +260,59 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-cde1569a0a17764439712b9364f22c17
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-163baea6bb78eb24abae54033ee381aa
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Temp\UnityTempFile-cde1569a0a17764439712b9364f22c17
-    projectPath: Temp\UnityTempFile-cde1569a0a17764439712b9364f22c17
+      of Dionysus\Temp\UnityTempFile-163baea6bb78eb24abae54033ee381aa
+    projectPath: Temp\UnityTempFile-163baea6bb78eb24abae54033ee381aa
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-e94fa708b46217c49bf3807fb58b239e
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-4e7e353759f329f478636c02c07bb191
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Temp\UnityTempFile-e94fa708b46217c49bf3807fb58b239e
-    projectPath: Temp\UnityTempFile-e94fa708b46217c49bf3807fb58b239e
+      of Dionysus\Temp\UnityTempFile-4e7e353759f329f478636c02c07bb191
+    projectPath: Temp\UnityTempFile-4e7e353759f329f478636c02c07bb191
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-5b130fdbc6eccca4f858e7b74b31fc63
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Temp\UnityTempFile-5b130fdbc6eccca4f858e7b74b31fc63
+    projectPath: Temp\UnityTempFile-5b130fdbc6eccca4f858e7b74b31fc63
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-8412f9b91e41ba94b9432bd940f4744a
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Temp\UnityTempFile-8412f9b91e41ba94b9432bd940f4744a
+    projectPath: Temp\UnityTempFile-8412f9b91e41ba94b9432bd940f4744a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-957d679e2b610cb4e80e0fc6ecaf6519
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Temp\UnityTempFile-957d679e2b610cb4e80e0fc6ecaf6519
+    projectPath: Temp\UnityTempFile-957d679e2b610cb4e80e0fc6ecaf6519
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-97eca193b4e546d47a20b47cb6a6bdbb
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Temp\UnityTempFile-97eca193b4e546d47a20b47cb6a6bdbb
+    projectPath: Temp\UnityTempFile-97eca193b4e546d47a20b47cb6a6bdbb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-f1ddf7e3282d3ec4c9d6bf25fd0f433d
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Temp\UnityTempFile-f1ddf7e3282d3ec4c9d6bf25fd0f433d
+    projectPath: Temp\UnityTempFile-f1ddf7e3282d3ec4c9d6bf25fd0f433d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Temp\UnityTempFile-f44d33a743e514544b2c4e2c124991bb
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Temp\UnityTempFile-f44d33a743e514544b2c4e2c124991bb
+    projectPath: Temp\UnityTempFile-f44d33a743e514544b2c4e2c124991bb
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
