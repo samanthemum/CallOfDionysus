@@ -14,6 +14,8 @@ public class HeroScript : MonoBehaviour
     static int attack = 20;
     private bool fight = false;
     public Animator animator;
+    private float totalTime = 0;
+    private float knockBackTimer = 0f;
 
     public void hpBuff(float buff)
     {
@@ -21,6 +23,10 @@ public class HeroScript : MonoBehaviour
         maxHP = (int)(maxHP + buff);
     }
 
+    public float getSpeed()
+    {
+        return speed;
+    }
     public int getAttack()
     {
         return attack;
@@ -83,7 +89,7 @@ public class HeroScript : MonoBehaviour
     {
         bool isPaused = gameManager.isPaused();
 
-        if (!isPaused && !fight);
+        if (!isPaused);
         {
             float y_factor = (int)Input.GetAxis("Vertical");
             float x_factor = (int)Input.GetAxis("Horizontal");
@@ -91,25 +97,41 @@ public class HeroScript : MonoBehaviour
             float current_y = heroRB.position.y;
             float current_x = heroRB.position.x;
 
-            heroRB.MovePosition(new Vector2(current_x + (x_factor * speed), current_y + (y_factor * speed)));
-
-            if(Input.GetKeyDown(KeyCode.Space))
+            if (knockBackTimer <= 0)
             {
-                animator.SetTrigger("attack");
-            } 
+                if (sanity > 20)
+                {
+                    heroRB.MovePosition(new Vector2(current_x + (x_factor * speed), current_y + (y_factor * speed)));
+                }
+                else
+                {
+                    totalTime += Time.deltaTime;
+                    heroRB.MovePosition(new Vector2(current_x + (x_factor * speed) + (y_factor * Mathf.Cos(10 * totalTime)) / 50f, current_y + (y_factor * speed) + (x_factor * Mathf.Cos(10 * totalTime)) / 50f));
+                }
+
+
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    animator.SetTrigger("attack");
+                }
+
+                if (knockBackTimer < 0)
+                {
+                    knockBackTimer = 0;
+                }
+            } else
+            {
+                knockBackTimer-= Time.deltaTime;
+            }
         }
     }
 
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "enemy")
+        if(collision.gameObject.tag == "enemy" && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation"))
         {
-            fight = true;
+            knockBackTimer = .5f;
         }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        fight = false;
     }
 }

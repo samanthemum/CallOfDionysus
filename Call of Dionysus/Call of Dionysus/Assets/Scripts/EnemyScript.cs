@@ -11,6 +11,7 @@ public class EnemyScript : MonoBehaviour
     public float speed;
     public float damage = 10;
     private bool fight = false;
+    private float knockBackTimer = 0f;
 
     public int getHP()
     {
@@ -84,7 +85,18 @@ public class EnemyScript : MonoBehaviour
 
             Vector2 directionOfHero = (heroRB.transform.position - enemyRB.transform.position).normalized;
             Vector2 newPosition = new Vector2(enemy_x + (speed * directionOfHero.x), enemy_y + (speed * directionOfHero.y));
-            enemyRB.MovePosition(newPosition);
+
+            if (knockBackTimer <= 0)
+            {
+                enemyRB.MovePosition(newPosition);
+                if (knockBackTimer < 0)
+                {
+                    knockBackTimer = 0;
+                }
+            } else
+            {
+                knockBackTimer-=Time.deltaTime;
+            }
         }
     }
 
@@ -93,7 +105,6 @@ public class EnemyScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "hero")
         {
-            fight = true;
             if (gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation")) 
             {
                 int attack = gameManager.getHero().getAttack();
@@ -104,12 +115,13 @@ public class EnemyScript : MonoBehaviour
                 float enemy_y = enemyRB.transform.position.y;
 
                 // apply knockback
-                Vector2 heroToEnemy = (enemyRB.transform.position - heroRB.transform.position).normalized * (attack);
+                Vector2 enemyToHero = (enemyRB.transform.position - heroRB.transform.position).normalized * hero.getAttack() * 10;
 
-                float x_attack = heroToEnemy.x < 0.0f ?  -1.5f : 1.5f;
-                float y_attack = heroToEnemy.y < 0.0f ? -1.5f : 1.5f;
+                Debug.Log("Knocking back!");
+                enemyRB.AddForce(new Vector2(enemyToHero.x, enemyToHero.y));
+                gameManager.takeDamage(damage);
 
-                enemyRB.AddForce(new Vector2(x_attack, y_attack));
+                knockBackTimer = .5f;
 
                 // do damage
                 hp -= attack;
@@ -126,17 +138,10 @@ public class EnemyScript : MonoBehaviour
                 float enemy_y = enemyRB.transform.position.y;
 
                 // apply knockback
-                Vector2 enemyToHero = (heroRB.transform.position - enemyRB.transform.position).normalized * (damage);
-                float x_attack = enemyToHero.x < 0 ? -1.5f : 1.5f;
-                float y_attack = enemyToHero.y < 0 ? -1.5f : 1.5f;
-                hero.GetComponent<Rigidbody2D>().MovePosition(new Vector2(heroRB.transform.position.x + x_attack, heroRB.transform.position.y + y_attack));
-                gameManager.takeDamage(damage);
+                Vector2 heroToEnemy = (heroRB.transform.position - enemyRB.transform.position).normalized * damage * 10;
+
+                heroRB.AddForce(heroToEnemy);
             }
         }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        fight = false;
     }
 }

@@ -15,6 +15,8 @@ public class MainCamera : MonoBehaviour
     private float rateOfZoom = 5;
     private float rateOfMirror = 5;
     private float rateOfAudio = 10;
+    private bool zooming = false;
+    private bool muted = false;
     void Start()
     {
         heroRB = hero.GetComponent<Rigidbody2D>();
@@ -28,6 +30,7 @@ public class MainCamera : MonoBehaviour
     {
         float y_factor = (int)Input.GetAxis("Vertical");
         float x_factor = (int)Input.GetAxis("Horizontal");
+        speedFactor = heroScript.getSpeed() * 5;
 
         if (heroScript.getSanity() > 80)
         {
@@ -41,17 +44,28 @@ public class MainCamera : MonoBehaviour
         if(heroScript.getSanity() <= 60)
         {
             rateOfZoom -= Time.deltaTime;
-            if(rateOfZoom <= 0)
+            if (rateOfZoom <= 0)
             {
                 rateOfZoom = 5;
+                Debug.Log("Here 1");
                 float doZoom = Random.Range(1, 10);
-
+                zooming = true;
+               
                 if(doZoom <= 5)
                 {
-                    camera.orthographicSize = 2.5f;
+                    zooming = true;
                 } else
                 {
+                    zooming = false;
                     camera.orthographicSize = defaultFOV;
+                }
+            }
+
+            if(zooming)
+            {
+                if (camera.orthographicSize >= 2.5f)
+                {
+                    camera.orthographicSize -= Time.deltaTime;
                 }
             }
         }

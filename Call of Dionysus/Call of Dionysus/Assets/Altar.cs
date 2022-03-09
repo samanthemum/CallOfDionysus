@@ -43,7 +43,7 @@ public class Altar : MonoBehaviour
         makeTrade.enabled = false;
         initialObj.SetActive(false);
         makeTradeObj.SetActive(false);
-
+        gameManager.unpause();
     }
 
     public void exitTrade()
@@ -92,7 +92,7 @@ public class Altar : MonoBehaviour
         {
             if (gameManager.getHero().getSanity() >= 20)
             {
-                gameManager.speedBuff(1.5f);
+                gameManager.speedBuff(1.25f);
                 gameManager.sanityCost(20);
             }
         }
