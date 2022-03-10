@@ -16,6 +16,8 @@ public class HeroScript : MonoBehaviour
     public Animator animator;
     private float totalTime = 0;
     private float knockBackTimer = 0f;
+    public AudioSource footsteps;
+    public AudioSource attackSound;
 
     public void hpBuff(float buff)
     {
@@ -89,7 +91,7 @@ public class HeroScript : MonoBehaviour
     {
         bool isPaused = gameManager.isPaused();
 
-        if (!isPaused);
+        if (!isPaused)
         {
             float y_factor = (int)Input.GetAxis("Vertical");
             float x_factor = (int)Input.GetAxis("Horizontal");
@@ -99,7 +101,7 @@ public class HeroScript : MonoBehaviour
 
             if (knockBackTimer <= 0)
             {
-                if (sanity > 20)
+                if (sanity > 80)
                 {
                     heroRB.MovePosition(new Vector2(current_x + (x_factor * speed), current_y + (y_factor * speed)));
                 }
@@ -113,15 +115,30 @@ public class HeroScript : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     animator.SetTrigger("attack");
+                    attackSound.Play();
                 }
 
                 if (knockBackTimer < 0)
                 {
                     knockBackTimer = 0;
                 }
+
+                if((x_factor != 0 || y_factor != 0) && !footsteps.isPlaying)
+                {
+                    footsteps.Play();
+                }
+
+                if((x_factor == 0 && y_factor == 0) && footsteps.isPlaying)
+                {
+                    footsteps.Pause();
+                }
             } else
             {
                 knockBackTimer-= Time.deltaTime;
+                if(footsteps.isPlaying)
+                {
+                    footsteps.Pause();
+                }
             }
         }
     }

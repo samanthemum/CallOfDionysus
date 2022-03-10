@@ -35,13 +35,13 @@ public class MainCamera : MonoBehaviour
         if (heroScript.getSanity() > 80)
         {
             GetComponent<RectTransform>().position = new Vector3(heroRB.transform.position.x, heroRB.transform.position.y, -2.5f);
-        } else if(heroScript.getSanity() <= 80)
+        } else if(heroScript.getSanity() <= 60)
         {
             GetComponent<RectTransform>().position = Vector3.Lerp(GetComponent<RectTransform>().position, new Vector3(heroRB.transform.position.x, heroRB.transform.position.y, -2.5f), Time.deltaTime*speedFactor);
         }
 
         // do camera zoom stuff
-        if(heroScript.getSanity() <= 60)
+        if(heroScript.getSanity() <= 40)
         {
             rateOfZoom -= Time.deltaTime;
             if (rateOfZoom <= 0)
@@ -71,7 +71,7 @@ public class MainCamera : MonoBehaviour
         }
 
         // do camera flip stuff
-        if (heroScript.getSanity() <= 40)
+        if (heroScript.getSanity() <= 20)
         {
             rateOfMirror -= Time.deltaTime;
             if (rateOfMirror <= 0)
@@ -91,7 +91,7 @@ public class MainCamera : MonoBehaviour
         }
 
         // do audio stuff
-        if (heroScript.getSanity() <= 20)
+        if (heroScript.getSanity() <= 10)
         {
             rateOfAudio -= Time.deltaTime;
             if (rateOfAudio <= 0)

@@ -12,6 +12,7 @@ public class EnemyScript : MonoBehaviour
     public float damage = 10;
     private bool fight = false;
     private float knockBackTimer = 0f;
+    public Animator animator;
 
     public int getHP()
     {
@@ -66,7 +67,7 @@ public class EnemyScript : MonoBehaviour
         isPaused = gameManager.isPaused();
  
 
-        if(hero != null && !isPaused && !fight)
+        if(hero != null && !isPaused)
         {
             Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
             float hero_x = heroRB.transform.position.x;
@@ -86,6 +87,23 @@ public class EnemyScript : MonoBehaviour
             Vector2 directionOfHero = (heroRB.transform.position - enemyRB.transform.position).normalized;
             Vector2 newPosition = new Vector2(enemy_x + (speed * directionOfHero.x), enemy_y + (speed * directionOfHero.y));
 
+            // Setup animator stuff
+            if(Mathf.Abs(directionOfHero.x) > Mathf.Abs(directionOfHero.y))
+            {
+                animator.SetBool("horizontal", true);
+            } else
+            {
+                animator.SetBool("horizontal", false);
+            }
+            animator.SetFloat("x", directionOfHero.x);
+            animator.SetFloat ("y", directionOfHero.y);
+
+            if(fight && gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation"))
+            {
+                takeDamage();
+                fight = false;
+            }
+
             if (knockBackTimer <= 0)
             {
                 enemyRB.MovePosition(newPosition);
@@ -100,48 +118,58 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
+    private void takeDamage()
+    {
+        int attack = gameManager.getHero().getAttack();
+
+        Rigidbody2D enemyRB = GetComponent<Rigidbody2D>();
+        Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
+
+        // apply knockback
+        Vector2 enemyToHero = (enemyRB.transform.position - heroRB.transform.position).normalized * hero.getAttack() * 10;
+
+        Debug.Log("Knocking back!");
+        enemyRB.AddForce(new Vector2(enemyToHero.x, enemyToHero.y));
+
+
+        knockBackTimer = .5f;
+
+        // do damage
+        hp -= attack;
+
+        if (hp <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     // Do damage to the player if we hit them
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if(collision.gameObject.tag == "hero")
         {
+            fight = true;
             if (gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation")) 
             {
-                int attack = gameManager.getHero().getAttack();
-
-                Rigidbody2D enemyRB = GetComponent<Rigidbody2D>();
-                Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
-                float enemy_x = enemyRB.transform.position.x;
-                float enemy_y = enemyRB.transform.position.y;
-
-                // apply knockback
-                Vector2 enemyToHero = (enemyRB.transform.position - heroRB.transform.position).normalized * hero.getAttack() * 10;
-
-                Debug.Log("Knocking back!");
-                enemyRB.AddForce(new Vector2(enemyToHero.x, enemyToHero.y));
-                gameManager.takeDamage(damage);
-
-                knockBackTimer = .5f;
-
-                // do damage
-                hp -= attack;
-
-                if (hp <= 0)
-                {
-                    Destroy(this.gameObject);
-                }
+                takeDamage();
+                fight = false;
             }
             else {
                 Rigidbody2D enemyRB = GetComponent<Rigidbody2D>();
                 Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
-                float enemy_x = enemyRB.transform.position.x;
-                float enemy_y = enemyRB.transform.position.y;
 
                 // apply knockback
                 Vector2 heroToEnemy = (heroRB.transform.position - enemyRB.transform.position).normalized * damage * 10;
+                gameManager.takeDamage(damage);
 
                 heroRB.AddForce(heroToEnemy);
             }
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        fight = false;
     }
 }

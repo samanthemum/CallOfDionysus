@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7756390678706158112}
   - component: {fileID: 51438320839936902}
   - component: {fileID: 1409179595649166923}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Enemy HP Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 6970318596437831767}
   - component: {fileID: 5416537684956214079}
   - component: {fileID: 3210265828469375309}
+  - component: {fileID: 6773327138474151579}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: enemy
@@ -265,8 +266,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -682650115
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e078b06370c06a542969b03d09d115d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -340,4 +341,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   damage: 10
-  gameObject: {fileID: 5328477690310578893}
+  animator: {fileID: 6773327138474151579}
+--- !u!95 &6773327138474151579
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5328477690310578893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c5b366d093854247ba6e0621cdf4882, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
