@@ -141,6 +141,14 @@ public class HeroScript : MonoBehaviour
                 }
             }
         }
+
+        else
+        {
+            if(footsteps.isPlaying)
+            {
+                footsteps.Pause();
+            }
+        }
     }
 
     

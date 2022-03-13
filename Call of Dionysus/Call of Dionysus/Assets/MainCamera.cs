@@ -32,7 +32,7 @@ public class MainCamera : MonoBehaviour
         float x_factor = (int)Input.GetAxis("Horizontal");
         speedFactor = heroScript.getSpeed() * 5;
 
-        if (heroScript.getSanity() > 80)
+        if (heroScript.getSanity() > 60)
         {
             GetComponent<RectTransform>().position = new Vector3(heroRB.transform.position.x, heroRB.transform.position.y, -2.5f);
         } else if(heroScript.getSanity() <= 60)

@@ -395,7 +395,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 763563923}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -700,7 +700,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &213015891
 GameObject:
@@ -1345,18 +1345,18 @@ PrefabInstance:
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3413187409621403089}
+      objectReference: {fileID: 1464606065}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: exitTrade
+      value: exitSanityMessage
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Altar, Assembly-CSharp
+      value: SanityMessage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1382,6 +1382,7 @@ GameObject:
   - component: {fileID: 525875330}
   - component: {fileID: 525875329}
   - component: {fileID: 525875328}
+  - component: {fileID: 525875332}
   m_Layer: 5
   m_Name: Sanity Message 3
   m_TagString: Untagged
@@ -1470,6 +1471,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &525875332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525875327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9245f0361e5349a00a874969ac88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sanityLevelCap: 20
 --- !u!1 &552296288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1682,7 @@ Transform:
   - {fileID: 1163963089}
   - {fileID: 426410072}
   m_Father: {fileID: 763563923}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &647150662
 Grid:
@@ -1931,6 +1945,7 @@ GameObject:
   - component: {fileID: 728535584}
   - component: {fileID: 728535583}
   - component: {fileID: 728535582}
+  - component: {fileID: 728535586}
   m_Layer: 5
   m_Name: Sanity Message 1
   m_TagString: Untagged
@@ -2019,6 +2034,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &728535586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728535581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9245f0361e5349a00a874969ac88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sanityLevelCap: 60
 --- !u!1 &756480950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2084,7 @@ Transform:
   - {fileID: 1808552184}
   - {fileID: 818319120}
   m_Father: {fileID: 763563923}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763563922
 GameObject:
@@ -2086,6 +2114,7 @@ Transform:
   m_LocalPosition: {x: 25.394184, y: 5.3662467, z: -7.5957365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1582951670}
   - {fileID: 769820767}
   - {fileID: 99872195}
   - {fileID: 1011146537}
@@ -2137,7 +2166,7 @@ Transform:
   - {fileID: 607376175}
   - {fileID: 1374776724}
   m_Father: {fileID: 763563923}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &818319120 stripped
 Transform:
@@ -2345,18 +2374,18 @@ PrefabInstance:
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3413187409621403089}
+      objectReference: {fileID: 1763401084}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: exitTrade
+      value: exitSanityMessage
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Altar, Assembly-CSharp
+      value: SanityMessage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2512,7 +2541,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 763563923}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6774,18 +6803,18 @@ PrefabInstance:
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3413187409621403089}
+      objectReference: {fileID: 1289049569}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: exitTrade
+      value: exitSanityMessage
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Altar, Assembly-CSharp
+      value: SanityMessage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -6878,6 +6907,7 @@ GameObject:
   - component: {fileID: 1289049567}
   - component: {fileID: 1289049566}
   - component: {fileID: 1289049565}
+  - component: {fileID: 1289049569}
   m_Layer: 5
   m_Name: Sanity Message 4
   m_TagString: Untagged
@@ -6966,6 +6996,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1289049569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289049564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9245f0361e5349a00a874969ac88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sanityLevelCap: 10
 --- !u!1001 &1313298419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7045,6 +7088,7 @@ GameObject:
   - component: {fileID: 1464606063}
   - component: {fileID: 1464606062}
   - component: {fileID: 1464606061}
+  - component: {fileID: 1464606065}
   m_Layer: 5
   m_Name: Sanity Message 5
   m_TagString: Untagged
@@ -7133,6 +7177,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1464606065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464606060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9245f0361e5349a00a874969ac88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sanityLevelCap: 80
 --- !u!1 &1552594515
 GameObject:
   m_ObjectHideFlags: 0
@@ -7315,7 +7372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582951669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -25.394184, y: -5.3662467, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 728535585}
@@ -7323,8 +7380,8 @@ Transform:
   - {fileID: 525875331}
   - {fileID: 1289049568}
   - {fileID: 1464606064}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 763563923}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1630611726
 GameObject:
@@ -12646,18 +12703,18 @@ PrefabInstance:
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3413187409621403089}
+      objectReference: {fileID: 525875332}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: exitTrade
+      value: exitSanityMessage
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Altar, Assembly-CSharp
+      value: SanityMessage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -12683,6 +12740,7 @@ GameObject:
   - component: {fileID: 1763401082}
   - component: {fileID: 1763401081}
   - component: {fileID: 1763401080}
+  - component: {fileID: 1763401084}
   m_Layer: 5
   m_Name: Sanity Message 2
   m_TagString: Untagged
@@ -12771,6 +12829,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1763401084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763401079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9245f0361e5349a00a874969ac88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sanityLevelCap: 40
 --- !u!1001 &1779286330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12905,18 +12976,18 @@ PrefabInstance:
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3413187409621403089}
+      objectReference: {fileID: 728535586}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: exitTrade
+      value: exitSanityMessage
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Altar, Assembly-CSharp
+      value: SanityMessage, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3841633111082314685, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -13216,7 +13287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3413187409014651242, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3413187409014651242, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13276,17 +13347,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
---- !u!114 &3413187409621403089 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3413187409014651245, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
-  m_PrefabInstance: {fileID: 3413187409621403088}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4642f223cb65144b41dd5684707f2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3960765866753764881
 PrefabInstance:
   m_ObjectHideFlags: 0
