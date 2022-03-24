@@ -39,4 +39,9 @@ public class MainMenuButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void help()
+    {
+        SceneManager.LoadScene("Help");
+    }
 }
