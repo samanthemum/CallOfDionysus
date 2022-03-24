@@ -213,6 +213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1055567537922575425, guid: 107eaa09bd6f081408efcea02a972ce1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3112143512184565163, guid: 107eaa09bd6f081408efcea02a972ce1, type: 3}
       propertyPath: m_Name
       value: UIManager

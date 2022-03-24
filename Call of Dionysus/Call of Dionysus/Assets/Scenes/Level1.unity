@@ -342,7 +342,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -615,7 +615,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -760,7 +760,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -1234,6 +1234,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7607844
       objectReference: {fileID: 0}
+    - target: {fileID: 3841633110783497452, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3841633111082314674, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1924,7 +1928,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOUR BALANCE WAS NEVER YOUR STRONG SUIT, BUT NOW IT's worse than ever.
+  m_Text: Your balance was never your strong suit, but now it's worse than ever.
 --- !u!222 &696082834
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2263,6 +2267,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7607844
       objectReference: {fileID: 0}
+    - target: {fileID: 3841633110783497452, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3841633111082314674, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6692,6 +6700,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7607844
       objectReference: {fileID: 0}
+    - target: {fileID: 3841633110783497452, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3841633111082314674, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7248,7 +7260,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -7327,7 +7339,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -12469,7 +12481,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -12548,7 +12560,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -12592,6 +12604,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7607844
       objectReference: {fileID: 0}
+    - target: {fileID: 3841633110783497452, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3841633111082314674, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12865,6 +12881,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7607844
       objectReference: {fileID: 0}
+    - target: {fileID: 3841633110783497452, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3841633111082314674, guid: 4ece426e2134e964c8a33abe9a792ae7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13116,7 +13136,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -13128,7 +13148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: EVEN YOUR EARS WON't work consistently anymore.
+  m_Text: Even your ears won't work consistently anymore.
 --- !u!222 &1807800794
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13200,7 +13220,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -13516,10 +13536,18 @@ PrefabInstance:
       propertyPath: hero
       value: 
       objectReference: {fileID: 1637038907}
+    - target: {fileID: 9012225181152775414, guid: ac0292fd4ba811f4a9cfc13be3cca35a, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 9012225181315991497, guid: ac0292fd4ba811f4a9cfc13be3cca35a, type: 3}
       propertyPath: hero
       value: 
       objectReference: {fileID: 1637038907}
+    - target: {fileID: 9012225181315991503, guid: ac0292fd4ba811f4a9cfc13be3cca35a, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 9012225182412951360, guid: ac0292fd4ba811f4a9cfc13be3cca35a, type: 3}
       propertyPath: m_Name
       value: Hero UI

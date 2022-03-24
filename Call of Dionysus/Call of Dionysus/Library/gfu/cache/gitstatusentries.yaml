@@ -13,16 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2022-03-10T14:35:47.836-06:00
-  initializedAtString: 2022-03-10T14:33:36.882-06:00
+  lastUpdatedAtString: 2022-03-23T21:52:25.669-05:00
+  initializedAtString: 2022-03-23T21:28:06.472-05:00
   entries:
-  - path: Call of Dionysus\Call of Dionysus\.vs\Call of Dionysus\v17\.suo
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\.vs\Call of Dionysus\v17\.suo
-    projectPath: .vs\Call of Dionysus\v17\.suo
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Call of Dionysus\Call of Dionysus\Assembly-CSharp.csproj
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Assembly-CSharp.csproj
@@ -30,27 +23,41 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Assets\MainCamera.cs
+  - path: Call of Dionysus\Call of Dionysus\Assets\Fonts\pixelated SDF.asset
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Assets\MainCamera.cs
-    projectPath: Assets\MainCamera.cs
+      of Dionysus\Assets\Fonts\pixelated SDF.asset
+    projectPath: Assets\Fonts\pixelated SDF.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Assets\Fonts\pixelated SDF.asset.meta
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Assets\Fonts\pixelated SDF.asset.meta
+    projectPath: Assets\Fonts\pixelated SDF.asset.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Assets\Fonts\pixelated.ttf
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Assets\Fonts\pixelated.ttf
+    projectPath: Assets\Fonts\pixelated.ttf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Assets\Fonts\pixelated.ttf.meta
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Assets\Fonts\pixelated.ttf.meta
+    projectPath: Assets\Fonts\pixelated.ttf.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Assets\Prefabs\MenuButton.prefab
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Assets\Prefabs\MenuButton.prefab
+    projectPath: Assets\Prefabs\MenuButton.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Assets\SanityMessage.cs
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Assets\SanityMessage.cs
-    projectPath: Assets\SanityMessage.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Assets\SanityMessage.cs.meta
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Assets\SanityMessage.cs.meta
-    projectPath: Assets\SanityMessage.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Call of Dionysus\Call of Dionysus\Assets\Scenes\Level1.unity
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Assets\Scenes\Level1.unity
@@ -58,10 +65,24 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Assets\Scripts\HeroScript.cs
+  - path: Call of Dionysus\Call of Dionysus\Assets\Scenes\LossLevel.unity
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Assets\Scripts\HeroScript.cs
-    projectPath: Assets\Scripts\HeroScript.cs
+      of Dionysus\Assets\Scenes\LossLevel.unity
+    projectPath: Assets\Scenes\LossLevel.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Call of Dionysus\Call of Dionysus\Assets\Scenes\MainMenu.unity
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Assets\Scenes\MainMenu.unity
+    projectPath: Assets\Scenes\MainMenu.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Call of Dionysus\Call of Dionysus\Assets\Scenes\WinLevel.unity
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Assets\Scenes\WinLevel.unity
+    projectPath: Assets\Scenes\WinLevel.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -72,76 +93,48 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\37\37813eea3bd10a089c6ba80e42bfd5f2
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\00\001c6eb4bdfc71b53ab7f5336bf9238e
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\37\37813eea3bd10a089c6ba80e42bfd5f2
-    projectPath: Library\Artifacts\37\37813eea3bd10a089c6ba80e42bfd5f2
+      of Dionysus\Library\Artifacts\00\001c6eb4bdfc71b53ab7f5336bf9238e
+    projectPath: Library\Artifacts\00\001c6eb4bdfc71b53ab7f5336bf9238e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\4c\4c6f497be8f03adb97c64ad236aee8a2
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\09\091c3e7eb1aae8d32cbbbf1cc804a6e1
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\4c\4c6f497be8f03adb97c64ad236aee8a2
-    projectPath: Library\Artifacts\4c\4c6f497be8f03adb97c64ad236aee8a2
+      of Dionysus\Library\Artifacts\09\091c3e7eb1aae8d32cbbbf1cc804a6e1
+    projectPath: Library\Artifacts\09\091c3e7eb1aae8d32cbbbf1cc804a6e1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\61\616bf04413fc0b94abacf37c13dc3d77
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\16\164b9b2afd9073efd792c53b38b3640e
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\61\616bf04413fc0b94abacf37c13dc3d77
-    projectPath: Library\Artifacts\61\616bf04413fc0b94abacf37c13dc3d77
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\77\77be05db04133a3aab3848ffacb3e821
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\77\77be05db04133a3aab3848ffacb3e821
-    projectPath: Library\Artifacts\77\77be05db04133a3aab3848ffacb3e821
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\81\812e0ff773b2760abc4e84ca21aba61f
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\81\812e0ff773b2760abc4e84ca21aba61f
-    projectPath: Library\Artifacts\81\812e0ff773b2760abc4e84ca21aba61f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\aa\aa40f8c0cbd89d8057a20722fee42e3c
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\aa\aa40f8c0cbd89d8057a20722fee42e3c
-    projectPath: Library\Artifacts\aa\aa40f8c0cbd89d8057a20722fee42e3c
+      of Dionysus\Library\Artifacts\16\164b9b2afd9073efd792c53b38b3640e
+    projectPath: Library\Artifacts\16\164b9b2afd9073efd792c53b38b3640e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\ab\ab54ae98182f9ba14ba5a55772917bba
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\25\25cf70fe455d7484a13fe77aa82e5d3e
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\ab\ab54ae98182f9ba14ba5a55772917bba
-    projectPath: Library\Artifacts\ab\ab54ae98182f9ba14ba5a55772917bba
+      of Dionysus\Library\Artifacts\25\25cf70fe455d7484a13fe77aa82e5d3e
+    projectPath: Library\Artifacts\25\25cf70fe455d7484a13fe77aa82e5d3e
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\cb\cb025e70384a0c48ad8aaf1ec12cef64
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\3f\3f9044b5f719e59533ba67f10885a3b7
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\cb\cb025e70384a0c48ad8aaf1ec12cef64
-    projectPath: Library\Artifacts\cb\cb025e70384a0c48ad8aaf1ec12cef64
+      of Dionysus\Library\Artifacts\3f\3f9044b5f719e59533ba67f10885a3b7
+    projectPath: Library\Artifacts\3f\3f9044b5f719e59533ba67f10885a3b7
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\f7\f74906b696d054d0c031e497577b4c83
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\44\44a49615523afced6ac707d911be8746
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\f7\f74906b696d054d0c031e497577b4c83
-    projectPath: Library\Artifacts\f7\f74906b696d054d0c031e497577b4c83
+      of Dionysus\Library\Artifacts\44\44a49615523afced6ac707d911be8746
+    projectPath: Library\Artifacts\44\44a49615523afced6ac707d911be8746
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Call of Dionysus\Call of Dionysus\Library\Artifacts\fb\fbf6550600cfd3dd03cea7e830deefbd
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\Artifacts\fb\fbf6550600cfd3dd03cea7e830deefbd
-    projectPath: Library\Artifacts\fb\fbf6550600cfd3dd03cea7e830deefbd
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Call of Dionysus\Call of Dionysus\Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Library\CurrentLayout-default.dwlt
@@ -212,20 +205,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Call of Dionysus\Call of Dionysus\Library\SourceAssetDB
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Library\SourceAssetDB
@@ -240,6 +219,13 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Call of Dionysus\Call of Dionysus\Library\StateCache\PrefabStageHierarchy\81\8154186dbf0cf6aad65252c7c62fcdb5.json
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Library\StateCache\PrefabStageHierarchy\81\8154186dbf0cf6aad65252c7c62fcdb5.json
+    projectPath: Library\StateCache\PrefabStageHierarchy\81\8154186dbf0cf6aad65252c7c62fcdb5.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Call of Dionysus\Call of Dionysus\Library\StateCache\SceneView\20\20f51d372f700b849506d54d82ac716e.json
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Library\StateCache\SceneView\20\20f51d372f700b849506d54d82ac716e.json
@@ -247,13 +233,20 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Call of Dionysus\Call of Dionysus\Logs\AssetImportWorker0-prev.log
+  - path: Call of Dionysus\Call of Dionysus\Logs\AssetImportWorker0.log
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
-      of Dionysus\Logs\AssetImportWorker0-prev.log
-    projectPath: Logs\AssetImportWorker0-prev.log
+      of Dionysus\Logs\AssetImportWorker0.log
+    projectPath: Logs\AssetImportWorker0.log
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\Logs\shadercompiler-AssetImportWorker0.log
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\Logs\shadercompiler-AssetImportWorker0.log
+    projectPath: Logs\shadercompiler-AssetImportWorker0.log
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Call of Dionysus\Call of Dionysus\Logs\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
       of Dionysus\Logs\shadercompiler-UnityShaderCompiler.exe0.log
@@ -282,9 +275,690 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Call of Dionysus\Call of Dionysus\UserSettings\EditorUserSettings.asset
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Call of Dionysus\Call
+      of Dionysus\UserSettings\EditorUserSettings.asset
+    projectPath: UserSettings\EditorUserSettings.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Krita Files\beloved_v2.kra
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Krita Files\beloved_v2.kra
+    projectPath: ..\..\Krita Files\beloved_v2.kra
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Krita Files\cerberus concept.kra
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Krita Files\cerberus
+      concept.kra
+    projectPath: ..\..\Krita Files\cerberus concept.kra
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Krita Files\cerberus concept.kra~
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Krita Files\cerberus
+      concept.kra~
+    projectPath: ..\..\Krita Files\cerberus concept.kra~
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Krita Files\hero_backward.kra
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Krita Files\hero_backward.kra
+    projectPath: ..\..\Krita Files\hero_backward.kra
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Krita Files\hero_backward.kra~
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Krita Files\hero_backward.kra~
+    projectPath: ..\..\Krita Files\hero_backward.kra~
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Krita Files\hero_forward.kra
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Krita Files\hero_forward.kra
+    projectPath: ..\..\Krita Files\hero_forward.kra
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Krita Files\hero_forward.kra~
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Krita Files\hero_forward.kra~
+    projectPath: ..\..\Krita Files\hero_forward.kra~
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Sprint Plan.xlsx
     fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprint Plan.xlsx
     projectPath: ..\..\Sprint Plan.xlsx
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Sprites\hero\hero_backward0000.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0000.png
+    projectPath: ..\..\Sprites\hero\hero_backward0000.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0001.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0001.png
+    projectPath: ..\..\Sprites\hero\hero_backward0001.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0002.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0002.png
+    projectPath: ..\..\Sprites\hero\hero_backward0002.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0003.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0003.png
+    projectPath: ..\..\Sprites\hero\hero_backward0003.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0004.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0004.png
+    projectPath: ..\..\Sprites\hero\hero_backward0004.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0005.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0005.png
+    projectPath: ..\..\Sprites\hero\hero_backward0005.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0006.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0006.png
+    projectPath: ..\..\Sprites\hero\hero_backward0006.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0007.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0007.png
+    projectPath: ..\..\Sprites\hero\hero_backward0007.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0008.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0008.png
+    projectPath: ..\..\Sprites\hero\hero_backward0008.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0009.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0009.png
+    projectPath: ..\..\Sprites\hero\hero_backward0009.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0010.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0010.png
+    projectPath: ..\..\Sprites\hero\hero_backward0010.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0011.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0011.png
+    projectPath: ..\..\Sprites\hero\hero_backward0011.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0012.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0012.png
+    projectPath: ..\..\Sprites\hero\hero_backward0012.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0013.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0013.png
+    projectPath: ..\..\Sprites\hero\hero_backward0013.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0014.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0014.png
+    projectPath: ..\..\Sprites\hero\hero_backward0014.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0015.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0015.png
+    projectPath: ..\..\Sprites\hero\hero_backward0015.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0016.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0016.png
+    projectPath: ..\..\Sprites\hero\hero_backward0016.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0017.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0017.png
+    projectPath: ..\..\Sprites\hero\hero_backward0017.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0018.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0018.png
+    projectPath: ..\..\Sprites\hero\hero_backward0018.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0019.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0019.png
+    projectPath: ..\..\Sprites\hero\hero_backward0019.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0020.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0020.png
+    projectPath: ..\..\Sprites\hero\hero_backward0020.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0021.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0021.png
+    projectPath: ..\..\Sprites\hero\hero_backward0021.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0022.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0022.png
+    projectPath: ..\..\Sprites\hero\hero_backward0022.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0023.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0023.png
+    projectPath: ..\..\Sprites\hero\hero_backward0023.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0024.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0024.png
+    projectPath: ..\..\Sprites\hero\hero_backward0024.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0025.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0025.png
+    projectPath: ..\..\Sprites\hero\hero_backward0025.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0026.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0026.png
+    projectPath: ..\..\Sprites\hero\hero_backward0026.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0027.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0027.png
+    projectPath: ..\..\Sprites\hero\hero_backward0027.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0028.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0028.png
+    projectPath: ..\..\Sprites\hero\hero_backward0028.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0029.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0029.png
+    projectPath: ..\..\Sprites\hero\hero_backward0029.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0030.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0030.png
+    projectPath: ..\..\Sprites\hero\hero_backward0030.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0031.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0031.png
+    projectPath: ..\..\Sprites\hero\hero_backward0031.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0032.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0032.png
+    projectPath: ..\..\Sprites\hero\hero_backward0032.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0033.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0033.png
+    projectPath: ..\..\Sprites\hero\hero_backward0033.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0034.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0034.png
+    projectPath: ..\..\Sprites\hero\hero_backward0034.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0035.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0035.png
+    projectPath: ..\..\Sprites\hero\hero_backward0035.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0036.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0036.png
+    projectPath: ..\..\Sprites\hero\hero_backward0036.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0037.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0037.png
+    projectPath: ..\..\Sprites\hero\hero_backward0037.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0038.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0038.png
+    projectPath: ..\..\Sprites\hero\hero_backward0038.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0039.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0039.png
+    projectPath: ..\..\Sprites\hero\hero_backward0039.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0040.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0040.png
+    projectPath: ..\..\Sprites\hero\hero_backward0040.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0041.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0041.png
+    projectPath: ..\..\Sprites\hero\hero_backward0041.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0042.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0042.png
+    projectPath: ..\..\Sprites\hero\hero_backward0042.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0043.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0043.png
+    projectPath: ..\..\Sprites\hero\hero_backward0043.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0044.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0044.png
+    projectPath: ..\..\Sprites\hero\hero_backward0044.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0045.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0045.png
+    projectPath: ..\..\Sprites\hero\hero_backward0045.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0046.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0046.png
+    projectPath: ..\..\Sprites\hero\hero_backward0046.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0047.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0047.png
+    projectPath: ..\..\Sprites\hero\hero_backward0047.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0048.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0048.png
+    projectPath: ..\..\Sprites\hero\hero_backward0048.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0049.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0049.png
+    projectPath: ..\..\Sprites\hero\hero_backward0049.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0050.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0050.png
+    projectPath: ..\..\Sprites\hero\hero_backward0050.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0051.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0051.png
+    projectPath: ..\..\Sprites\hero\hero_backward0051.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0052.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0052.png
+    projectPath: ..\..\Sprites\hero\hero_backward0052.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0053.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0053.png
+    projectPath: ..\..\Sprites\hero\hero_backward0053.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0054.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0054.png
+    projectPath: ..\..\Sprites\hero\hero_backward0054.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0055.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0055.png
+    projectPath: ..\..\Sprites\hero\hero_backward0055.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0056.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0056.png
+    projectPath: ..\..\Sprites\hero\hero_backward0056.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0057.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0057.png
+    projectPath: ..\..\Sprites\hero\hero_backward0057.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0058.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0058.png
+    projectPath: ..\..\Sprites\hero\hero_backward0058.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0059.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0059.png
+    projectPath: ..\..\Sprites\hero\hero_backward0059.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0060.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0060.png
+    projectPath: ..\..\Sprites\hero\hero_backward0060.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0061.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0061.png
+    projectPath: ..\..\Sprites\hero\hero_backward0061.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0062.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0062.png
+    projectPath: ..\..\Sprites\hero\hero_backward0062.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0063.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0063.png
+    projectPath: ..\..\Sprites\hero\hero_backward0063.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0064.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0064.png
+    projectPath: ..\..\Sprites\hero\hero_backward0064.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0065.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0065.png
+    projectPath: ..\..\Sprites\hero\hero_backward0065.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0066.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0066.png
+    projectPath: ..\..\Sprites\hero\hero_backward0066.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0067.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0067.png
+    projectPath: ..\..\Sprites\hero\hero_backward0067.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0068.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0068.png
+    projectPath: ..\..\Sprites\hero\hero_backward0068.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0069.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0069.png
+    projectPath: ..\..\Sprites\hero\hero_backward0069.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0070.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0070.png
+    projectPath: ..\..\Sprites\hero\hero_backward0070.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0071.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0071.png
+    projectPath: ..\..\Sprites\hero\hero_backward0071.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0072.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0072.png
+    projectPath: ..\..\Sprites\hero\hero_backward0072.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0073.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0073.png
+    projectPath: ..\..\Sprites\hero\hero_backward0073.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0074.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0074.png
+    projectPath: ..\..\Sprites\hero\hero_backward0074.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0075.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0075.png
+    projectPath: ..\..\Sprites\hero\hero_backward0075.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0076.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0076.png
+    projectPath: ..\..\Sprites\hero\hero_backward0076.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0077.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0077.png
+    projectPath: ..\..\Sprites\hero\hero_backward0077.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0078.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0078.png
+    projectPath: ..\..\Sprites\hero\hero_backward0078.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0079.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0079.png
+    projectPath: ..\..\Sprites\hero\hero_backward0079.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0080.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0080.png
+    projectPath: ..\..\Sprites\hero\hero_backward0080.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0081.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0081.png
+    projectPath: ..\..\Sprites\hero\hero_backward0081.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0082.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0082.png
+    projectPath: ..\..\Sprites\hero\hero_backward0082.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0083.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0083.png
+    projectPath: ..\..\Sprites\hero\hero_backward0083.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0084.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0084.png
+    projectPath: ..\..\Sprites\hero\hero_backward0084.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0085.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0085.png
+    projectPath: ..\..\Sprites\hero\hero_backward0085.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0086.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0086.png
+    projectPath: ..\..\Sprites\hero\hero_backward0086.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0087.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0087.png
+    projectPath: ..\..\Sprites\hero\hero_backward0087.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0088.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0088.png
+    projectPath: ..\..\Sprites\hero\hero_backward0088.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0089.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0089.png
+    projectPath: ..\..\Sprites\hero\hero_backward0089.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0090.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0090.png
+    projectPath: ..\..\Sprites\hero\hero_backward0090.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0091.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0091.png
+    projectPath: ..\..\Sprites\hero\hero_backward0091.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0092.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0092.png
+    projectPath: ..\..\Sprites\hero\hero_backward0092.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0093.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0093.png
+    projectPath: ..\..\Sprites\hero\hero_backward0093.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0094.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0094.png
+    projectPath: ..\..\Sprites\hero\hero_backward0094.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0095.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0095.png
+    projectPath: ..\..\Sprites\hero\hero_backward0095.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0096.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0096.png
+    projectPath: ..\..\Sprites\hero\hero_backward0096.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0097.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0097.png
+    projectPath: ..\..\Sprites\hero\hero_backward0097.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0098.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0098.png
+    projectPath: ..\..\Sprites\hero\hero_backward0098.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0099.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0099.png
+    projectPath: ..\..\Sprites\hero\hero_backward0099.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_backward0100.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_backward0100.png
+    projectPath: ..\..\Sprites\hero\hero_backward0100.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_forward0000.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_forward0000.png
+    projectPath: ..\..\Sprites\hero\hero_forward0000.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_forward0001.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_forward0001.png
+    projectPath: ..\..\Sprites\hero\hero_forward0001.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_forward0002.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_forward0002.png
+    projectPath: ..\..\Sprites\hero\hero_forward0002.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Sprites\hero\hero_forward0003.png
+    fullPath: C:\Users\Sam Hallam\Desktop\TAGD\CallOfDionysus\Sprites\hero\hero_forward0003.png
+    projectPath: ..\..\Sprites\hero\hero_forward0003.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1

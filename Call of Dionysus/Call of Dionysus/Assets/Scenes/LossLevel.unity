@@ -217,13 +217,17 @@ PrefabInstance:
       propertyPath: m_Text
       value: LEVEL LOST!
       objectReference: {fileID: 0}
+    - target: {fileID: 1055567537922575425, guid: 107eaa09bd6f081408efcea02a972ce1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3112143512184565163, guid: 107eaa09bd6f081408efcea02a972ce1, type: 3}
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
     - target: {fileID: 4320669346385511169, guid: 107eaa09bd6f081408efcea02a972ce1, type: 3}
       propertyPath: m_Text
-      value: TRY AGAIN
+      value: Try Again
       objectReference: {fileID: 0}
     - target: {fileID: 4320669346642296815, guid: 107eaa09bd6f081408efcea02a972ce1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
