@@ -1920,7 +1920,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -13257,6 +13257,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 763563923}
     m_Modifications:
+    - target: {fileID: 1877485548886732760, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Text
+      value: YES
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877485549354457776, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Text
+      value: NO
+      objectReference: {fileID: 0}
     - target: {fileID: 3413187407737051489, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -13269,6 +13277,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3413187407966129967, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Text
+      value: SPEED BUFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187407966129967, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3413187408036512191, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -13293,10 +13309,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3413187408382688519, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3413187408392197734, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3413187408392197736, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Text
+      value: ATTACK BUFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408392197736, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3413187408448457835, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -13305,6 +13333,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3413187408703204669, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Text
+      value: 'Trade Offers:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187408703204669, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     - target: {fileID: 3413187409014651241, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
       propertyPath: m_Name
       value: Altar
@@ -13369,6 +13405,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3413187409167669850, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_Text
+      value: 'Make a trade with Dionysus:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3413187409167669850, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f631c69f7ac40344297448a3f3b1c72b, type: 3}
 --- !u!1001 &3960765866753764881

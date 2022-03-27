@@ -37,7 +37,7 @@ public class MainCamera : MonoBehaviour
             GetComponent<RectTransform>().position = new Vector3(heroRB.transform.position.x, heroRB.transform.position.y, -2.5f);
         } else if(heroScript.getSanity() <= 60)
         {
-            GetComponent<RectTransform>().position = Vector3.Lerp(GetComponent<RectTransform>().position, new Vector3(heroRB.transform.position.x, heroRB.transform.position.y, -2.5f), Time.deltaTime*speedFactor);
+            GetComponent<RectTransform>().position = Vector3.Lerp(GetComponent<RectTransform>().position, new Vector3(heroRB.transform.position.x, heroRB.transform.position.y, -2.5f), Time.deltaTime*speedFactor*(heroScript.getSpeed()/.1f));
         }
 
         // do camera zoom stuff

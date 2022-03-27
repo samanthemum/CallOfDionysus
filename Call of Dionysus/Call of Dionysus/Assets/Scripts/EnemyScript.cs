@@ -98,20 +98,20 @@ public class EnemyScript : MonoBehaviour
             animator.SetFloat("x", directionOfHero.x);
             animator.SetFloat ("y", directionOfHero.y);
 
-            if(fight && gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation"))
-            {
-                takeDamage();
-                fight = false;
-            }
-
             if (knockBackTimer <= 0)
             {
                 enemyRB.MovePosition(newPosition);
+                if (fight && gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation"))
+                {
+                    takeDamage();
+                }
                 if (knockBackTimer < 0)
                 {
                     knockBackTimer = 0;
                 }
-            } else
+            } 
+            
+            else
             {
                 knockBackTimer-=Time.deltaTime;
             }
@@ -153,17 +153,20 @@ public class EnemyScript : MonoBehaviour
             if (gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation")) 
             {
                 takeDamage();
-                fight = false;
             }
             else {
                 Rigidbody2D enemyRB = GetComponent<Rigidbody2D>();
                 Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
 
                 // apply knockback
-                Vector2 heroToEnemy = (heroRB.transform.position - enemyRB.transform.position).normalized * damage * 10;
+                Vector2 heroToEnemy = (heroRB.transform.position - enemyRB.transform.position).normalized * damage * 20;
                 gameManager.takeDamage(damage);
 
-                heroRB.AddForce(heroToEnemy);
+                // have enemy stagger back a little
+                enemyRB.AddForce(-1 * heroToEnemy / 2);
+                knockBackTimer = .5f;
+
+                hero.GetComponent<Rigidbody2D>().AddForce(heroToEnemy);
             }
         }
     }

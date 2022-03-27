@@ -7,11 +7,11 @@ public class HeroScript : MonoBehaviour
     public static float speed = .1f;
     public Rigidbody2D heroRB;
     private GameManager gameManager;
-    static int hp = 100;
-    static int sanity = 100;
-    static int maxHP = 100;
+    int hp = 100;
+    int sanity = 100;
+    int maxHP = 100;
     const int maxSanity = 100;
-    static int attack = 20;
+    int attack = 20;
     private bool fight = false;
     public Animator animator;
     private float totalTime = 0;
@@ -108,7 +108,7 @@ public class HeroScript : MonoBehaviour
                 else
                 {
                     totalTime += Time.deltaTime;
-                    heroRB.MovePosition(new Vector2(current_x + (x_factor * speed) + (y_factor * Mathf.Cos(10 * totalTime)) / 50f, current_y + (y_factor * speed) + (x_factor * Mathf.Cos(10 * totalTime)) / 50f));
+                    heroRB.MovePosition(new Vector2(current_x + (x_factor * speed) + (y_factor * Mathf.Cos(10 * totalTime)) / 25f, current_y + (y_factor * speed) + (x_factor * Mathf.Cos(10 * totalTime)) / 25f));
                 }
 
 
@@ -156,7 +156,7 @@ public class HeroScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "enemy" && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation"))
         {
-            knockBackTimer = .5f;
+            knockBackTimer = .25f;
         }
     }
 }
