@@ -8,6 +8,7 @@ public class MainMenuButtonScript : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameManager gameManager;
+    public AudioSource buttonClick;
     void Start()
     {
         gameManager = GetComponentInParent<GameManager>();
@@ -26,22 +27,26 @@ public class MainMenuButtonScript : MonoBehaviour
 
     public void startGame()
     {
+        buttonClick.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     // TODO: PUT CAP IF WE BEAT THE GAME
     public void playLevel()
     {
+        buttonClick.Play();
         SceneManager.LoadScene("Level" + gameManager.getLevel());
     }
 
     public void returnToMainMenu()
     {
+        buttonClick.Play();
         SceneManager.LoadScene("MainMenu");
     }
 
     public void help()
     {
+        buttonClick.Play();
         SceneManager.LoadScene("Help");
     }
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// using UnityEngine.AI;
+using UnityEngine.AI;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -8,11 +10,14 @@ public class EnemyScript : MonoBehaviour
     private HeroScript hero;
     private int hp = 50;
     private int maxHP = 50;
-    public float speed;
+    public float speed = 5f;
+    public float acceleration = 24f;
     public float damage = 10;
     private bool fight = false;
     private float knockBackTimer = 0f;
     public Animator animator;
+    NavMeshAgent agent;
+    public AudioSource groan;
 
     public int getHP()
     {
@@ -58,6 +63,11 @@ public class EnemyScript : MonoBehaviour
         {
             Debug.LogException(e);
         }
+
+        agent = GetComponent<NavMeshAgent>();
+        agent.acceleration = acceleration;
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     // Update is called once per frame
@@ -65,9 +75,9 @@ public class EnemyScript : MonoBehaviour
     {
         bool isPaused = false;
         isPaused = gameManager.isPaused();
- 
 
-        if(hero != null && !isPaused)
+        agent.SetDestination(hero.gameObject.transform.position);
+        if (hero != null && !isPaused)
         {
             Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
             float hero_x = heroRB.transform.position.x;
@@ -85,7 +95,7 @@ public class EnemyScript : MonoBehaviour
             } 
 
             Vector2 directionOfHero = (heroRB.transform.position - enemyRB.transform.position).normalized;
-            Vector2 newPosition = new Vector2(enemy_x + (speed * directionOfHero.x), enemy_y + (speed * directionOfHero.y));
+            //Vector2 newPosition = new Vector2(enemy_x + (speed * directionOfHero.x), enemy_y + (speed * directionOfHero.y));
 
             // Setup animator stuff
             if(Mathf.Abs(directionOfHero.x) > Mathf.Abs(directionOfHero.y))
@@ -100,7 +110,7 @@ public class EnemyScript : MonoBehaviour
 
             if (knockBackTimer <= 0)
             {
-                enemyRB.MovePosition(newPosition);
+                agent.speed = current_speed;
                 if (fight && gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation"))
                 {
                     takeDamage();
@@ -108,6 +118,7 @@ public class EnemyScript : MonoBehaviour
                 if (knockBackTimer < 0)
                 {
                     knockBackTimer = 0;
+                    agent.isStopped = false;
                 }
             } 
             
@@ -120,6 +131,7 @@ public class EnemyScript : MonoBehaviour
 
     private void takeDamage()
     {
+        groan.Play();
         int attack = gameManager.getHero().getAttack();
 
         Rigidbody2D enemyRB = GetComponent<Rigidbody2D>();
@@ -127,9 +139,8 @@ public class EnemyScript : MonoBehaviour
 
         // apply knockback
         Vector2 enemyToHero = (enemyRB.transform.position - heroRB.transform.position).normalized * hero.getAttack() * 10;
-
-        Debug.Log("Knocking back!");
         enemyRB.AddForce(new Vector2(enemyToHero.x, enemyToHero.y));
+        agent.isStopped = true;
 
 
         knockBackTimer = .5f;

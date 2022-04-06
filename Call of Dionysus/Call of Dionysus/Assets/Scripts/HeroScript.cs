@@ -18,6 +18,7 @@ public class HeroScript : MonoBehaviour
     private float knockBackTimer = 0f;
     public AudioSource footsteps;
     public AudioSource attackSound;
+    public AudioSource hitSound;
 
     public void hpBuff(float buff)
     {
@@ -71,6 +72,7 @@ public class HeroScript : MonoBehaviour
 
     public void takeDamage(float damage)
     {
+        hitSound.Play();
         hp = hp - (int)damage;
     }
 
@@ -110,6 +112,12 @@ public class HeroScript : MonoBehaviour
                     totalTime += Time.deltaTime;
                     heroRB.MovePosition(new Vector2(current_x + (x_factor * speed) + (y_factor * Mathf.Cos(10 * totalTime)) / 25f, current_y + (y_factor * speed) + (x_factor * Mathf.Cos(10 * totalTime)) / 25f));
                 }
+                animator.SetFloat("x", x_factor);
+                animator.SetFloat("y", y_factor);
+                bool horizontal = Mathf.Abs(x_factor) >= Mathf.Abs(y_factor) ? true : false;
+                animator.SetBool("horizontal", horizontal);
+                bool stopped = x_factor == 0 && y_factor == 0;
+                animator.SetBool("stopped", stopped);
 
 
                 if (Input.GetKeyDown(KeyCode.Space))
@@ -148,6 +156,7 @@ public class HeroScript : MonoBehaviour
             {
                 footsteps.Pause();
             }
+            animator.SetBool("stopped", true);
         }
     }
 
