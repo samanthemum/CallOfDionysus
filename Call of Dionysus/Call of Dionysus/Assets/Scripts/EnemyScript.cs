@@ -126,6 +126,9 @@ public class EnemyScript : MonoBehaviour
             {
                 knockBackTimer-=Time.deltaTime;
             }
+        } else if(isPaused)
+        {
+            agent.isStopped = true;
         }
     }
 

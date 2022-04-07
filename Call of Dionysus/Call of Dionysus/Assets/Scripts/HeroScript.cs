@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HeroScript : MonoBehaviour
 {
-    public static float speed = .1f;
+    public float speed = .1f;
     public Rigidbody2D heroRB;
     private GameManager gameManager;
     int hp = 100;
@@ -157,6 +157,7 @@ public class HeroScript : MonoBehaviour
                 footsteps.Pause();
             }
             animator.SetBool("stopped", true);
+            heroRB.velocity = Vector3.zero;
         }
     }
 

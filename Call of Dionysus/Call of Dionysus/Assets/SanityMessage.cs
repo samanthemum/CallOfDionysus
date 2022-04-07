@@ -36,6 +36,5 @@ public class SanityMessage : MonoBehaviour
         displayed = true;
         gameObject.SetActive(false);
         canvas.enabled = false;
-        gameManager.unpause();
     }
 }

@@ -12,6 +12,7 @@ public class Spawners : MonoBehaviour
     public float rate;
     float spawnTimer;
     public float minDamage = 10;
+    public float speed = 5f;
     void Start()
     {
         gameManager = GetComponentInParent<GameManager>();
@@ -43,6 +44,7 @@ public class Spawners : MonoBehaviour
                     // based on level
                     enemy.GetComponent<EnemyScript>().setGameManger(gameManager);
                     enemy.GetComponent<EnemyScript>().damage = (Random.value * 10) + minDamage;
+                    enemy.GetComponent<EnemyScript>().speed = speed;
                 }
                 spawnTimer = rate;
             }

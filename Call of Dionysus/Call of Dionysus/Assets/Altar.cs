@@ -39,11 +39,13 @@ public class Altar : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        /*
         initialCanvas.enabled = false;
         makeTrade.enabled = false;
         initialObj.SetActive(false);
         makeTradeObj.SetActive(false);
         gameManager.unpause();
+        */
     }
 
     public void exitTrade()
@@ -57,6 +59,7 @@ public class Altar : MonoBehaviour
 
     public void enterTrade()
     {
+        gameManager.pause();
         initialCanvas.enabled = false;
         makeTrade.enabled = true;
         makeTradeObj.SetActive(true);
