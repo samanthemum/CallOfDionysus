@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     private HeroScript hero;
     private static int level = 1;
     private bool paused = false;
+    public GameObject grave;
+    static List<Vector3> deathPositions = new List<Vector3>();
 
     public HeroScript getHero()
     {
@@ -18,6 +20,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         hero = GetComponentInChildren<HeroScript>();
+        foreach(Vector3 position in deathPositions)
+        {
+                Instantiate(grave, position, new Quaternion());
+        }
     }
 
     public void takeDamage(float damage)
@@ -50,11 +56,13 @@ public class GameManager : MonoBehaviour
     {
         level++;
         hero.resetHP();
+        deathPositions.Clear();
         SceneManager.LoadScene("WinLevel");
     }
 
     public void loseLevel()
     {
+        deathPositions.Add(hero.GetComponent<Rigidbody2D>().position);
         hero.resetHP();
         SceneManager.LoadScene("LossLevel");
     }
