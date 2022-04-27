@@ -16,6 +16,7 @@ public class EnemyScript : MonoBehaviour
     private bool fight = false;
     private float knockBackTimer = 0f;
     public Animator animator;
+    private bool pausedLastFrame = false;
     NavMeshAgent agent;
     public AudioSource groan;
 
@@ -79,6 +80,10 @@ public class EnemyScript : MonoBehaviour
         agent.SetDestination(hero.gameObject.transform.position);
         if (hero != null && !isPaused)
         {
+            if(pausedLastFrame)
+            {
+                agent.isStopped = false;
+            }
             Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
             float hero_x = heroRB.transform.position.x;
             float hero_y = heroRB.transform.position.y;
@@ -130,6 +135,8 @@ public class EnemyScript : MonoBehaviour
         {
             agent.isStopped = true;
         }
+
+        pausedLastFrame = isPaused;
     }
 
     private void takeDamage()

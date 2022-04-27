@@ -953,6 +953,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialCanvas: {fileID: 3413187408269092961}
   makeTrade: {fileID: 3413187408036512163}
+  initialObj: {fileID: 3413187408269092989}
+  makeTradeObj: {fileID: 3413187408036512191}
 --- !u!1 &3413187409106213049
 GameObject:
   m_ObjectHideFlags: 0

@@ -65,6 +65,9 @@
     <Compile Include="Assets\Scripts\DisplayHeroSanity.cs" />
     <Compile Include="Assets\Scripts\DisplayEnemyHP.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\EnemyColumnScript.cs" />
+    <Compile Include="Assets\DisplayEnemyColumnHP.cs" />
+    <Compile Include="Assets\Fireball.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -752,6 +755,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{9590B49B-00BD-42A0-CF97-510013B4AD58}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{7D66B4CB-613E-A6D9-54E7-298D994D23AC}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

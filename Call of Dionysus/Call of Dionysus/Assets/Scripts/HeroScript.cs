@@ -16,6 +16,7 @@ public class HeroScript : MonoBehaviour
     public Animator animator;
     private float totalTime = 0;
     private float knockBackTimer = 0f;
+    private float attackCooldown = .0f;
     public AudioSource footsteps;
     public AudioSource attackSound;
     public AudioSource hitSound;
@@ -120,10 +121,11 @@ public class HeroScript : MonoBehaviour
                 animator.SetBool("stopped", stopped);
 
 
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space) && attackCooldown == 0)
                 {
                     animator.SetTrigger("attack");
                     attackSound.Play();
+                    attackCooldown = .5f;
                 }
 
                 if (knockBackTimer < 0)
@@ -158,6 +160,15 @@ public class HeroScript : MonoBehaviour
             }
             animator.SetBool("stopped", true);
             heroRB.velocity = Vector3.zero;
+        }
+
+        if(attackCooldown != 0)
+        {
+            attackCooldown -= Time.deltaTime;
+            if(attackCooldown <= 0)
+            {
+                attackCooldown = 0;
+            }
         }
     }
 
