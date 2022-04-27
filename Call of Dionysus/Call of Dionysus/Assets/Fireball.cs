@@ -10,6 +10,7 @@ public class Fireball : MonoBehaviour
     public GameManager gameManager;
     public float speed;
     public float damage;
+    public GameObject beloved;
     void Start()
     {
         enemyColumns = GameObject.FindGameObjectsWithTag("enemy_column");
@@ -18,21 +19,23 @@ public class Fireball : MonoBehaviour
         for (int i = 0; i < enemyColumns.Length; i++) {
             Physics2D.IgnoreCollision(enemyColumns[i].GetComponent<Collider2D>(), GetComponent<Collider2D>());
         }
+        Physics2D.IgnoreCollision(beloved.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(speed);
         Rigidbody2D heroRB = hero.GetComponent<Rigidbody2D>();
         Rigidbody2D thisRB = GetComponent<Rigidbody2D>();
 
-        Vector2 heroToFireball = (heroRB.transform.position - this.transform.position).normalized * speed;
-        thisRB.transform.position = new Vector3(thisRB.transform.position.x + heroToFireball.x, thisRB.transform.position.y + heroToFireball.y, thisRB.transform.position.z);
+        Vector2 heroToFireball = (heroRB.transform.position - thisRB.transform.position).normalized * speed;
+        thisRB.MovePosition(new Vector2(thisRB.transform.position.x + heroToFireball.x, thisRB.transform.position.y + heroToFireball.y));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "hero")
+        if(collision.gameObject.tag == "hero" && !gameManager.getHero().animator.GetCurrentAnimatorStateInfo(0).IsName("hero_attack_animation"))
         {
             gameManager.takeDamage(damage);
 
@@ -43,6 +46,6 @@ public class Fireball : MonoBehaviour
             hero.GetComponent<Rigidbody2D>().AddForce(heroToEnemy);
         }
 
-        Destroy(this.gameObject);
+       Destroy(this.gameObject);
     }
 }

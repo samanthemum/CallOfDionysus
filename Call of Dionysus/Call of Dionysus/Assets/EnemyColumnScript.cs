@@ -20,6 +20,7 @@ public class EnemyColumnScript : MonoBehaviour
     {
         if(hp <= 0)
         {
+            gameManager.decreaseColumnsRemaining();
             Destroy(this.gameObject);
         }
         if(fight)

@@ -11,6 +11,18 @@ public class GameManager : MonoBehaviour
     private bool paused = false;
     public GameObject grave;
     static List<Vector3> deathPositions = new List<Vector3>();
+    public int numColumns = 8;
+
+    public void decreaseColumnsRemaining()
+    {
+        numColumns--;
+
+        if(numColumns == 0)
+        {
+            // trade for finish game
+            winLevel();
+        }
+    }
 
     public HeroScript getHero()
     {
