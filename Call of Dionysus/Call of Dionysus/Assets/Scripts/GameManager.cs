@@ -20,8 +20,13 @@ public class GameManager : MonoBehaviour
         if(numColumns == 0)
         {
             // trade for finish game
-            winLevel();
+            wonGame();
         }
+    }
+
+    public void wonGame()
+    {
+        SceneManager.LoadScene("closing_scene");
     }
 
     public HeroScript getHero()

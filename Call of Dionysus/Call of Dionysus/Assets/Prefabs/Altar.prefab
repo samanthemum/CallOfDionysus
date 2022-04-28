@@ -223,7 +223,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -235,7 +235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: speed buff
+  m_Text: SPEED BUFF
 --- !u!1 &3413187408036512191
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +579,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -658,7 +658,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -670,7 +670,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: attack buff
+  m_Text: ATTACK BUFF
 --- !u!1 &3413187408448457835
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +814,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -826,7 +826,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'TRade offers:'
+  m_Text: 'Trade Offers:'
 --- !u!1 &3413187409014651241
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,8 +899,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -682650115
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 12d11462363302f46b9bd06dacf25f51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e35a16f40d7b23148aea1229ee29c784, type: 3}
+    m_Font: {fileID: 12800000, guid: 8b256642c150fbe46893bf3ef5bcd078, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -1111,7 +1111,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'make a trade with dionysus:'
+  m_Text: Make a trade with Dionysus?
 --- !u!1001 &3413187407590472990
 PrefabInstance:
   m_ObjectHideFlags: 0

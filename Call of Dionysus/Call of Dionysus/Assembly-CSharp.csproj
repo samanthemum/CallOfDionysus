@@ -62,13 +62,16 @@
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\Fireball.cs" />
     <Compile Include="Assets\Scripts\ExitScript.cs" />
+    <Compile Include="Assets\Beloved.cs" />
     <Compile Include="Assets\EnemyColumnScript.cs" />
     <Compile Include="Assets\MainCamera.cs" />
     <Compile Include="Assets\Scripts\DisplayHeroSanity.cs" />
     <Compile Include="Assets\Scripts\DisplayEnemyHP.cs" />
     <Compile Include="Assets\DisplayEnemyColumnHP.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Beloved.cs" />
+    <Compile Include="Assets\openingscene.cs" />
+    <Compile Include="Assets\WinScreenModifier.cs" />
+    <Compile Include="Assets\ClosingScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

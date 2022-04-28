@@ -322,11 +322,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
@@ -564,11 +564,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 15
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -2125,11 +2129,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
@@ -5733,11 +5737,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 10
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
+      propertyPath: speed
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -5905,11 +5913,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 8
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
@@ -6721,7 +6729,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 8
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
@@ -6729,7 +6737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
-      value: 14
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -7083,7 +7091,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
@@ -7317,11 +7325,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -7841,7 +7849,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 8
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
@@ -7849,7 +7857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
-      value: 12
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -8533,11 +8541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -10834,7 +10842,7 @@ Transform:
   - {fileID: 1940621600}
   - {fileID: 457673819}
   m_Father: {fileID: 1204250371029322044}
-  m_RootOrder: 16
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1621653868
 PrefabInstance:
@@ -13179,15 +13187,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 11
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -13355,11 +13363,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: speed
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: minDamage
@@ -13923,7 +13931,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3960765867224628513, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: rate
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3960765867224628542, guid: f20c69ab7a9971243abd567320aa65c5, type: 3}
       propertyPath: m_Pivot.x
@@ -14605,6 +14613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grave: {fileID: 5621725434805389920, guid: fd8a1fbbc09385c478e71f50673b7bdd, type: 3}
+  numColumns: 8
 --- !u!4 &1204250371029322044
 Transform:
   m_ObjectHideFlags: 0
@@ -14628,11 +14637,11 @@ Transform:
   - {fileID: 129296754}
   - {fileID: 2042091245}
   - {fileID: 1742407124}
+  - {fileID: 1619182589}
   - {fileID: 439599006}
   - {fileID: 1310914611}
   - {fileID: 1301667844}
   - {fileID: 925237585}
-  - {fileID: 1619182589}
   - {fileID: 213010376}
   m_Father: {fileID: 1204250371081889434}
   m_RootOrder: 1

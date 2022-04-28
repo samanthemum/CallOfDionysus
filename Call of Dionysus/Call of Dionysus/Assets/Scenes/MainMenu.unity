@@ -675,6 +675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a44fadd4be564d9a91e242edc46f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grave: {fileID: 5621725434805389920, guid: fd8a1fbbc09385c478e71f50673b7bdd, type: 3}
+  numColumns: 8
 --- !u!4 &917049879
 Transform:
   m_ObjectHideFlags: 0

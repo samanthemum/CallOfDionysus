@@ -43,8 +43,15 @@ public class Beloved : MonoBehaviour
 
             if (gameManager.numColumns < columns)
             {
-                speed *= 1.5f;
-                damage *= 1.5f;
+                if (speed <= 3)
+                {
+                    speed *= 1.5f;
+                }
+
+                if (damage <= 50)
+                {
+                    damage *= 1.5f;
+                }
                 columns--;
 
                 if (columns < 4)

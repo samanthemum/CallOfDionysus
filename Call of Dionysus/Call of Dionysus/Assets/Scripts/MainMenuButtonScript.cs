@@ -28,7 +28,7 @@ public class MainMenuButtonScript : MonoBehaviour
     public void startGame()
     {
         buttonClick.Play();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("opening_scene");
     }
 
     // TODO: PUT CAP IF WE BEAT THE GAME
